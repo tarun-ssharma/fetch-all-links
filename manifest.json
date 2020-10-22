@@ -1,0 +1,27 @@
+ {
+    "name": "GoFetchMyLinks",
+    "version": "2020.0.1",
+    "description": "Fetches a list of all the open links in the current window, and copies it to the clipboard as a json with keys as tabs' titles.",
+    "manifest_version": 2,
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "icons": {
+      "16":"icons/icon_16.png",
+      "19":"icons/icon_19.png",
+      "38":"icons/icon_38.png",
+      "48":"icons/icon_48.png",
+      "128":"icons/icon_128.png" 
+  	},    
+    "browser_action": {
+      "default_icon": {
+        "16": "icons/icon_16.png",
+        "19": "icons/icon_19.png",
+        "38": "icons/icon_38.png",                 
+        "48": "icons/icon_48.png",
+        "128": "icons/icon_128.png" 
+      }
+    },
+    "permissions": ["clipboardWrite","storage","tabs","declarativeContent"]
+}
